@@ -5,15 +5,15 @@ let k = 4;
 
 console.log(FindKLargest(array1, k));
 
-// Approach Number 1 (By Sorting)
-// function FindKLargest(arr, k) {
-//   let obj = {};
-//   for (let i of arr) {
-//     obj[i] = true;
-//   }
-//   let sortedArr = Object.keys(obj);
-//   return sortedArr[array1.length - k];
-// }
+Approach Number 1 (By Sorting)
+function FindKLargest(arr, k) {
+  let obj = {};
+  for (let i of arr) {
+    obj[i] = true;
+  }
+  let sortedArr = Object.keys(obj);
+  return sortedArr[array1.length - k];
+}
 
 
 // =======================================================================================================
