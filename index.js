@@ -7,6 +7,7 @@ console.log(FindKLargest(array1, k));
 
 // Approach Number 1 (By Sorting)
 function FindKLargest(arr, k) {
+  if (k === 0 || k > arr.length) return "k is not valid";
   let obj = {};
   for (let i of arr) {
     obj[i] = true;
@@ -15,11 +16,11 @@ function FindKLargest(arr, k) {
   return sortedArr[array1.length - k];
 }
 
-
 // =======================================================================================================
 
 // Approach Number 2 (By Ritesh)
 // function FindKLargest(inp, k) {
+// if (k === 0 || k > arr.length) return "k is not valid";
 //   let arr = inp;
 //   while (k > 1) {
 //     let max = findMax(arr);
@@ -47,12 +48,12 @@ function findMin(arr) {
   return min;
 }
 
-
 // =========================================================================================================
 
 // Approach Number 3 (By Ankit)
 
 // function FindKLargest(arr, k) {
+// if (k === 0 || k > arr.length) return "k is not valid";
 //   let max = findMax(arr);
 //   if (k === 1) return max;
 //   let min = findMin(arr);
@@ -68,6 +69,5 @@ function findMin(arr) {
 //     }
 //   }
 // }
-
 
 // ===========================================================================================================
