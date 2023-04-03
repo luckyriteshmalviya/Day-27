@@ -5,7 +5,7 @@ let k = 4;
 
 console.log(FindKLargest(array1, k));
 
-Approach Number 1 (By Sorting)
+// Approach Number 1 (By Sorting)
 function FindKLargest(arr, k) {
   let obj = {};
   for (let i of arr) {
